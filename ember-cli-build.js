@@ -1,10 +1,59 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const autoprefixer = require('autoprefixer');
+const tailwind = require('tailwindcss');
 
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
+    'ember-cli-babel': {
+      includePolyfill: true, //so it works on IEii
+    },
     // Add options here
+    postcssOptions: {
+      compile: {
+        plugins: [
+          {
+            module: require('postcss-import'),
+            options: {
+              path: ['node_modules']
+            }
+          },
+          tailwind('./app/tailwind/config.js'),
+          {
+            module: autoprefixer,
+          },
+        ],
+      },
+      /*
+      compile: {
+        // enabled: true,
+        // cacheInclude: [/.*\.(css|scss)$/, /.tailwind\.js$/],
+        plugins: [
+          {
+            module: require('postcss-import'),
+            options: {
+              path: ['node_modules'],
+            },
+          },
+          tailwind('./app/tailwind/config.js'),
+          autoprefixer,
+          require('postcss-preset-env')({
+            stage: 1,
+          }),
+          // {
+          //   module: autoprefixer,
+          // },
+          // tailwind("./app/tailwind/config.js"),
+        ],
+      },
+      // filter: {
+      //   enabled: true,
+      //   include: ['styles/*.css'],
+      // },
+      // 
+      */
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated

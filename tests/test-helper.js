@@ -1,5 +1,5 @@
-import Application from 'unmute-exhibition/app';
-import config from 'unmute-exhibition/config/environment';
+import Application from 'unmute/app';
+import config from 'unmute/config/environment';
 import * as QUnit from 'qunit';
 import { setApplication } from '@ember/test-helpers';
 import { setup } from 'qunit-dom';

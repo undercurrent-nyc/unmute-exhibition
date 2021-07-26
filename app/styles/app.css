@@ -1,0 +1,15 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "components.css";
+
+@import "tailwindcss/utilities";
+
+body {
+  @apply overflow-x-hidden font-sans font-abnormal;
+}
+
+.unmute-logo {
+  width: 28%;
+}

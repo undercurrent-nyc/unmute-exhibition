@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   let ENV = {
-    modulePrefix: 'unmute-exhibition',
+    modulePrefix: 'unmute',
     environment,
     rootURL: '/',
     locationType: 'auto',
