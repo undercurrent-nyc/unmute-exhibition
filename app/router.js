@@ -21,4 +21,5 @@ Router.map(function () {
   this.route('consultants');
   this.route('podcast');
   this.route('podcast.episode', { path: '/podcast/episode/:id' });
+  this.route('staging');
 });

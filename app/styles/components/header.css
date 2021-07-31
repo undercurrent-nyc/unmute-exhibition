@@ -1,7 +1,0 @@
-header {
-  color: #ff0000;
-}
-
-h1 {
-  @apply text-gray-500;
-}

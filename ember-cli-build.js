@@ -1,31 +1,16 @@
-'use strict';
+"use strict";
 
-const EmberApp = require('ember-cli/lib/broccoli/ember-app');
-const autoprefixer = require('autoprefixer');
-const tailwind = require('tailwindcss');
+const EmberApp = require("ember-cli/lib/broccoli/ember-app");
+const autoprefixer = require("autoprefixer");
+const tailwind = require("tailwindcss");
 
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
-    'ember-cli-babel': {
+    "ember-cli-babel": {
       includePolyfill: true, //so it works on IEii
     },
     // Add options here
     postcssOptions: {
-      compile: {
-        plugins: [
-          {
-            module: require('postcss-import'),
-            options: {
-              path: ['node_modules'],
-            },
-          },
-          tailwind('./app/tailwind/config.js'),
-          {
-            module: autoprefixer,
-          },
-        ],
-      },
-      /*
       compile: {
         // enabled: true,
         // cacheInclude: [/.*\.(css|scss)$/, /.tailwind\.js$/],
@@ -33,26 +18,22 @@ module.exports = function (defaults) {
           {
             module: require('postcss-import'),
             options: {
-              path: ['node_modules'],
-            },
+              path: ['node_modules']
+            }
           },
           tailwind('./app/tailwind/config.js'),
           autoprefixer,
-          require('postcss-preset-env')({
-            stage: 1,
-          }),
-          // {
-          //   module: autoprefixer,
-          // },
-          // tailwind("./app/tailwind/config.js"),
+          require("postcss-preset-env")(
+            {
+              stage: 1,
+            }
+          ),
         ],
       },
       // filter: {
       //   enabled: true,
       //   include: ['styles/*.css'],
       // },
-      // 
-      */
     },
   });
 
