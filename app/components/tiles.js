@@ -5,6 +5,7 @@ export default class TilesComponent extends Component {
     {
       title: "10001",
       url: "https://10001.unmute.nyc",
+      imgur: "https://i.imgur.com/ucbLyTP.jpg",
       dates: [
         { 
           description: "Online residency",
@@ -15,6 +16,7 @@ export default class TilesComponent extends Component {
     {
       title: "10002",
       url: "https://10002.unmute.nyc",
+      imgur: "https://i.imgur.com/Fgbojli.jpg",
       dates: [
         { 
           description: "Online residency",
@@ -25,6 +27,7 @@ export default class TilesComponent extends Component {
     {
       title: "Exhibition",
       url: "/exhibition",
+      imgur: "https://i.imgur.com/8Ga9vJg.jpg",
       dates: [
         { 
           description: "Undercurrent",
