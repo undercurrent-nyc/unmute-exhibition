@@ -1,0 +1,17 @@
+<footer class="border-t border-black w-full pt-14 px-16 flex flex-row">
+
+  <div class="w-8 flex flex-row items-center">
+    {{svg-jar "austria-logo" class="h-full"}}
+  </div>
+  <div class="w-9/10 flex-grow grid grid-cols-5 grid-rows-3">
+    <div class="px-8 flex flex-row items-center">
+      {{svg-jar "undercurrent-logo"}}
+    </div>
+    {{#each this.logos as |logo|}}
+      <div class="px-8 flex flex-row items-center">
+        {{svg-jar (concat logo.slug "-logo")}}
+      </div>
+    {{/each}}
+  </div>
+</footer>
+

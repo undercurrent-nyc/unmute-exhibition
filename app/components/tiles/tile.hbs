@@ -1,0 +1,14 @@
+<div role="button" class="pt-5">
+  <a href={{@tile.url}}>
+    <h2 class="font-bold text-xl pb-2">{{@tile.title}}</h2>
+    <ul class="space-y-2 pb-4">
+      {{#each @tile.dates as |date|}}
+        <li>
+          <span class="font-bold">{{date.description}}</span><br />
+          {{date.dates}}
+        </li>
+      {{/each}}
+    </ul>
+    <img src="/assets/tiles/{{@tile.title}}.jpg" alt={{@tile.title}} />
+  </a>
+</div>

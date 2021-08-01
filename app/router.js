@@ -22,4 +22,5 @@ Router.map(function () {
   this.route('podcast');
   this.route('podcast.episode', { path: '/podcast/episode/:id' });
   this.route('staging');
+  this.route('exhibition');
 });
