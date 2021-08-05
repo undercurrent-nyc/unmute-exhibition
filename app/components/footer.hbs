@@ -12,7 +12,7 @@
           {{svg-jar "undercurrent-white" title="Undercurrent"}}
         </a>
       </div>
-      {{#each this.logos as |logo|}}
+      {{#each (shuffle this.logos) as |logo|}}
         <div>
           <a href={{logo.url}} role="button">
             {{svg-jar (concat logo.slug "-white") title=logo.name}}
