@@ -16,7 +16,7 @@ export default class TilesComponent extends Component {
     {
       title: "10002",
       url: "https://10002.unmute.nyc",
-      imgur: "https://i.imgur.com/Fgbojli.jpg",
+      imgur: "https://i.imgur.com/TFFKEuv.jpg",
       dates: [
         { 
           description: "Online residency",
