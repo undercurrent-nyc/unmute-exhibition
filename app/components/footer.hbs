@@ -1,21 +1,27 @@
-<footer class="border-t border-black w-full pt-14 main-margins flex flex-col">
+<footer class="border-t border-black w-full pt-6 md:pt-14 main-margins flex flex-col">
 
   <div class="flex flex-row w-full">
     <div class="austrian-cell flex items-center justify-center">
-      {{svg-jar "austrian-white" class="h-full" title="Austrian Cultural Forum NYC"}}
+      <a href="https://acfny.org/" role="button" class="w-full">
+        {{svg-jar "austrian-white" class="h-full" title="Austrian Cultural Forum NYC"}}
+      </a>
     </div>
     <div class="logos-grid w-9/10 grid grid-cols-5 grid-rows-3">
       <div>
-        {{svg-jar "undercurrent-white" title="Undercurrent"}}
+        <a href="https://undercurrent.nyc/" role="button">
+          {{svg-jar "undercurrent-white" title="Undercurrent"}}
+        </a>
       </div>
       {{#each this.logos as |logo|}}
         <div>
-          {{svg-jar (concat logo.slug "-white") title=logo.name}}
+          <a href={{logo.url}} role="button">
+            {{svg-jar (concat logo.slug "-white") title=logo.name}}
+          </a>
         </div>
       {{/each}}
     </div>
   </div>
-  <p class="text-xs md:text-sm w-full text-center pt-4">
+  <p class="text-xs md:text-sm w-full text-center py-4">
     © 2021 /UNDERCURRENT /70 John St. Brooklyn, NY, 11201.<br />
     All Rights Reserved.
   </p>

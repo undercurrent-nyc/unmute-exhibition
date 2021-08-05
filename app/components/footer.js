@@ -1,7 +1,24 @@
 import Component from '@glimmer/component';
 
 export default class FooterComponent extends Component {
-  logos = [
+
+  get logos() {
+    const logos = this.data;
+    if(this.args.useHope) {
+      logos.push(
+        { 
+          name: "Hope Recycling Station",
+          url: "",
+          slug: "hope",
+        },
+      );
+    }
+
+    return logos;
+  }
+
+
+  data = [
     { 
       name: "Co-funded by the Creative Europe Programme of the European Union",
       url: "",
@@ -12,11 +29,6 @@ export default class FooterComponent extends Component {
       url: "",
       slug: "eunic",
     },
-    // { 
-    //   name: "Hope Recycling Station",
-    //   url: "",
-    //   slug: "hope",
-    // },
     { 
       name: "Polish Cultural Institute",
       url: "",
