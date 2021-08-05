@@ -3,74 +3,74 @@ import Component from '@glimmer/component';
 export default class FooterComponent extends Component {
   logos = [
     { 
-      name: "",
+      name: "Co-funded by the Creative Europe Programme of the European Union",
       url: "",
       slug: "eu",
     },
     { 
-      name: "",
+      name: "EU National Institutes for Culture",
       url: "",
       slug: "eunic",
     },
+    // { 
+    //   name: "Hope Recycling Station",
+    //   url: "",
+    //   slug: "hope",
+    // },
     { 
-      name: "Hope Recycling Station",
-      url: "",
-      slug: "hope",
-    },
-    { 
-      name: "",
+      name: "Polish Cultural Institute",
       url: "",
       slug: "poland",
     },
     { 
-      name: "",
+      name: "Republic of Estonia Ministry of Culture",
       url: "",
       slug: "estonia",
     },
     { 
-      name: "",
+      name: "Flanders Delegation to the USA",
       url: "",
       slug: "flanders",
     },
     { 
-      name: "",
+      name: "Czech Center",
       url: "",
       slug: "czech",
     },
     { 
-      name: "",
+      name: "Consulate General of Estonia New York",
       url: "",
       slug: "estonia-consulate",
     },
     { 
-      name: "",
+      name: "Arts Council Malta",
       url: "",
       slug: "malta",
     },
     { 
-      name: "",
+      name: "Jindřich Chalupecký Society",
       url: "",
       slug: "chalupecky",
     },
     { 
-      name: "",
+      name: "Romanian Cultural Institute",
       url: "",
       slug: "romanian",
     },
     { 
-      name: "",
+      name: "Wallonie-Bruxelles International.be aux Etats-Unis",
       url: "",
       slug: "wallonia",
     },
     { 
-      name: "",
+      name: "Goethe Institute",
       url: "",
-      slug: "german",
+      slug: "goethe",
     },
     { 
-      name: "",
+      name: "Lithuanian Culture Institute",
       url: "",
-      slug: "lithuania",
+      slug: "lithuanian",
     },
   ]
 }

@@ -6,6 +6,14 @@ import { transition } from "d3-transition";
 
 export default class HeaderComponent extends Component {
 
+  seconds = {
+    beforeDrop: 2000,
+    remainOpen: 3000,
+    dropDuration: 1000 / 3,
+    colorAfterDrop: 500,
+    scrollUp: 500,
+  }
+
   isBlue = false;
 
   color = this.blue;
@@ -19,14 +27,13 @@ export default class HeaderComponent extends Component {
     this.animate();
     setInterval(() => {
       this.animate();
-    }, 8000);
+    }, this.seconds.beforeDrop + this.seconds.dropDuration + this.seconds.remainOpen + this.seconds.scrollUp);
   }
 
   animate(){
 
     select(".unmute-header-date")
       .transition()
-      .duration(250)
       .selectAll("path")
       .attr("fill", "black");
 
@@ -45,32 +52,30 @@ export default class HeaderComponent extends Component {
 
   dropText(selection, times){
     selection.transition()
-      .duration(500)
+      .duration(this.seconds.scrollUp)
       .attr("transform", "translate(0, 0)")
       .selectAll("path")
       .attr("fill", "black");
 
     selection.transition()
-      .delay(500)
+      .delay(this.seconds.scrollUp + this.seconds.beforeDrop)
       .ease(easeQuadOut)
-      .duration(times * 300)
+      .duration(times * this.seconds.dropDuration)
       .attr("transform", `translate(0, ${times * 262})`)
       .on("end", this.colorText(selection, times));
   }
 
   colorText(selection, times){
     if(times === 3){
-      setTimeout(() => {
-        selection.selectAll("path")
-          .transition()
-          .duration(900)
-          .attr("fill", this.color);
-        select(".unmute-header-date")
-          .selectAll("path")
-          .transition()
-          .duration(900)
-          .attr("fill", this.color);
-      }, 2000);
+      selection.selectAll("path")
+        .transition()
+        .delay(this.seconds.colorAfterDrop + this.seconds.scrollUp + this.seconds.beforeDrop + this.seconds.dropDuration)
+        .attr("fill", this.color);
+      select(".unmute-header-date")
+        .selectAll("path")
+        .transition()
+        .delay(this.seconds.colorAfterDrop + this.seconds.scrollUp + this.seconds.beforeDrop + this.seconds.dropDuration)
+        .attr("fill", this.color);
     }
   }
 }

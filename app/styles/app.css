@@ -10,111 +10,33 @@ body {
   @apply bg-black font-sans overflow-x-hidden font-abnormal;
 }
 
-.unmute-logo {
-  width: 28%;
+/* So heights don't need to be included for Safari */ 
+@supports (-webkit-backdrop-filter: blur(1px)) {
+  svg {
+    height: intrinsic;
+  }
 }
 
-.clip-tile.active rect.red.inverse, 
-.clip-tile.active polygon.green, 
-.clip-tile rect.red, 
-.clip-tile rect.green.inverse, 
-.clip-tile polygon.green,
-.team-clip-tile rect.red.inverse,
-.team-clip-tile rect.green,
-.team-clip-tile polygon.red,
-.team-clip-tile.active polygon.red,
-.team-clip-tile.active rect.green.inverse,
-.text-box.text-ungreen a:hover,
-path.red,
-.active .tile-text.text-ungreen {
-  color: #ff3000;
-  fill: #ff3000;
+.main-margins {
+  @apply px-4 md:px-16;
 }
 
-.clip-tile.active rect.green.inverse, 
-.clip-tile.active polygon.red, 
-.clip-tile rect.green, 
-.clip-tile rect.red.inverse, 
-.clip-tile polygon.red,
-.team-clip-tile polygon.green,
-.team-clip-tile rect.green.inverse,
-.team-clip-tile rect.red,
-.team-clip-tile.active polygon.green,
-.team-clip-tile.active rect.red.inverse,
-.text-box.text-unred a:hover,
-path.green,
-.active .tile-text.text-unred {
-  color: #048e35;
-  fill: #048e35;
+p {
+  @apply text-justify md:text-left;
 }
 
-.clip-tile.active rect.brown.inverse, 
-.clip-tile.active polygon.blue, 
-.clip-tile.active polygon.purple, 
-.clip-tile rect.brown, 
-.clip-tile rect.blue.inverse, 
-.clip-tile rect.purple.inverse, 
-.clip-tile polygon.purple, 
-.clip-tile polygon.blue,
-.team-clip-tile polygon.brown,
-.team-clip-tile.active rect.blue.inverse,
-.team-clip-tile.active polygon.brown,
-.team-clip-tile polygon.purple,
-.team-clip-tile.active polygon.purple,
-.team-clip-tile rect.brown.inverse,
-.team-clip-tile rect.blue,
-.text-box.text-unpurple a:hover,
-.text-box.text-unblue a:hover,
-path.brown,
-.active .tile-text.text-unblue {
-  color: #9b591e;
-  fill: #9b591e;
-}
-.clip-tile.active rect.blue.inverse, 
-.clip-tile.active polygon.brown, 
-.clip-tile rect.blue, 
-.clip-tile rect.brown.inverse, 
-.clip-tile polygon.brown,
-.team-clip-tile polygon.blue,
-.team-clip-tile.active rect.brown.inverse,
-.team-clip-tile.active polygon.blue,
-.team-clip-tile rect.blue.inverse,
-.team-clip-tile rect.brown,
-.text-box.text-unbrown a:hover,
-path.blue,
-.active .tile-text.text-unbrown {
-  color: #0963b5;
-  fill: #0963b5;
+.austrian-cell {
+  width: 6.7%;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
-.team-clip-tile rect.purple,
-.team-clip-tile.active rect.purple.inverse,
-.clip-tile.active rect.purple.inverse, 
-path.purple,
-.clip-tile rect.purple {
-  fill: #6043ba;
+.austrian-cell div {
+  width: 100%;
+  flex: 0 1;
 }
 
-path.white, .clip-tile polygon.inverse, .team-clip-tile polygon.inverse {
-  fill: white;
-}
-
-path.wave {
-  opacity: 0%;
-}
-
-.clip-play-box {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-}
-
-.active .name-tile {
-  visibility: visible;
-}
-
-.swallowtail {
-  min-width: 1rem;
+.logos-grid {
+  width: 93.3%;
 }
 
