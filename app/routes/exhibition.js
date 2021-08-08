@@ -5,14 +5,30 @@ export default class ExhibitionRoute extends Route {
     return {
       acfny: [
         {
-          x: 100,
+          id: "web",
+          x: 350,
           y: 100,
           title: "Some title",
           artists: ['Mo Kong', 'Olesja Katšanovskaja-Münd'],
         },
+        {
+          id: "stream",
+          x: 100,
+          y: 100,
+          title: "Some title",
+          artists: ['Marie Lukáčová', 'Emily Shanahan'],
+        },
       ],
       undercurrent: [
         {
+          id: "cloud",
+          x: 350,
+          y: 100,
+          title: "Some title",
+          artists: ['Emmanuel Massillon', 'FOQL'],
+        },
+        {
+          id: "bug",
           x: 100,
           y: 100,
           title: "Some title",

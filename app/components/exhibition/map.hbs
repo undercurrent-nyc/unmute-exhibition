@@ -12,3 +12,17 @@
       (concat @place "-map")
       " h-56")}}
 </div>
+  {{#each @data as |modal|}}
+   {{#if (eq this.showingModal modal.id)}}
+      {{#modal-dialog 
+        onClose=this.closeModal
+        translucentOverlay=true
+        }}
+        <h1>{{modal.title}}</h1>
+        {{#each modal.artists as |artist|}}
+          <p>{{artist}}</p>
+        {{/each}}
+        <button {{on "click" this.closeModal}}>Close</button>
+      {{/modal-dialog}}
+    {{/if}}
+  {{/each}}
