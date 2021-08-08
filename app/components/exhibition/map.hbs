@@ -1,0 +1,14 @@
+<div class="
+  flex flex-row h-56
+  {{if 
+    (eq @place "acfny") 
+      "justify-start" 
+      "justify-end"
+  }}"
+  {{did-insert this.addDots }}
+  >
+  {{svg-jar (concat @place "-map") 
+    class=(concat
+      (concat @place "-map")
+      " h-56")}}
+</div>

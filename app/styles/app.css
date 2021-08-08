@@ -10,15 +10,12 @@ body {
   @apply bg-black font-sans overflow-x-hidden font-abnormal;
 }
 
-/* So heights don't need to be included for Safari */ 
-@supports (-webkit-backdrop-filter: blur(1px)) {
-  svg {
-    height: intrinsic;
-  }
-}
-
 .main-margins {
   @apply px-4 md:px-16;
+}
+
+.bold {
+  @apply font-extrabold md:font-black;
 }
 
 p {

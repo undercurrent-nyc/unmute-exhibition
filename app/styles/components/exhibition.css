@@ -1,0 +1,49 @@
+.exhibition-icons {
+  @apply h-10 md:h-16 grid grid-rows-2 grid-cols-3 gap-y-1 md:gap-y-1
+}
+
+.exhibition-icons svg {
+  @apply h-4 md:h-6
+}
+
+.dates p {
+  @apply text-xs md:text-lg leading-tight;
+}
+
+article.exhibition .dates h2 {
+  @apply tracking-tight font-semibold md:text-5xl pb-0 md:pb-4;
+}
+
+.dates h3 {
+  @apply font-bold md:text-sm md:text-xl leading-tight;
+}
+
+article.exhibition section {
+  @apply main-margins pt-6 pb-6 w-full;
+}
+
+article.exhibition section h2 {
+  @apply font-extrabold text-2xl pb-4;
+}
+
+article.exhibition section li {
+  @apply pb-1 md:pb-2 text-sm md:text-xl;
+}
+
+article .anchor {
+  /* top: -6.75rem; for mobile */
+  /* top: -13rem;  for main */
+  @apply -top-27 md:-top-56 block relative invisible;
+}
+
+ul.exhibition-menu .active {
+  @apply font-bold;
+}
+
+ul.exhibition-menu .red .active {
+  @apply text-unred;
+}
+
+ul.exhibition-menu .blue .active {
+  @apply text-unblue;
+}

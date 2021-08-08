@@ -1,0 +1,23 @@
+<div class="flex flex-row justify-between">
+  <div class="hidden md:block md:flex-grow">&nbsp;</div>
+  <div class="w-full md:w-min flex-none flex flex-col justify-end">
+    <nobr>
+      <h2 class="md:pt-3">{{@dates}}</h2>
+    </nobr>
+    <div class="flex flex-row justify-between">
+      <div class="pr-4 flex flex-col justify-center">
+        <h3 class="">{{@place}}</h3>
+        <p>{{@addr1}}</p>
+        <p>{{@addr2}}</p>
+      </div>
+      <div class="w-5">
+        {{svg-jar "slash" title="Slash" class="h-full"}}
+      </div>
+      <div class="pl-4 flex flex-col justify-center">
+        <p class="text-right">{{@days}}</p>
+        <p class="text-right">{{@hours}}</p>
+        <p class="text-right">Free admission</p>
+      </div>
+    </div>
+  </div>
+</div>
