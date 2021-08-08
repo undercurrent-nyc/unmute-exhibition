@@ -1,7 +1,7 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1058.67 472.14">
   <defs>
     <style>
-      .cls-1{fill:#000;}.cls-2,.cls-3{fill:none;stroke:#000;stroke-width:0.23px;}.cls-2{stroke-miterlimit:10;}.cls-3{stroke-linecap:round;stroke-linejoin:round;}
+      .cls-1{fill:#000;}.cls-2,.cls-3{fill:none;stroke:#000;stroke-width:1px;}.cls-2{stroke-miterlimit:10;}.cls-3{stroke-linecap:round;stroke-linejoin:round;}
     </style>
   </defs>
   <path class="cls-1" d="M0,0V472.14H1058.67V0ZM804.6,55l16.45,93.07-5.14-5.71L800.23,55ZM914.86,396.72H144.47v-279H269.9V68.11h-8.23V59h18.85v58.6h27.72V54.73h5.48v82.72h56.93v-6.69H578.84v-5.25h7.8v-4.79h8v-5h8v-4.33H610v-4.79h7.45V102h8.1V97.34h7.07V92.55h7.84V88h7.71V83.31h7.71V78.87H664V73.62h7.84V69.29h7.46v-5h7.58V59.71h7.84V55H797l14.56,81.61h0l1,6.24L787,146.57h-1.2V147l.52-.43v18.82H899.76v7.3l-96.62,14.6H786.35V212h29.82v70.26H786.35l-2.06,0v7.6H914.86Z"/>
