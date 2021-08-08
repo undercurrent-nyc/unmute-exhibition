@@ -6,9 +6,6 @@
 
 @import "tailwindcss/utilities";
 
-@import "ember-modal-dialog/ember-modal-structure.css";
-@import "ember-modal-dialog/ember-modal-appearance.css";
-
 body {
   @apply bg-black font-sans overflow-x-hidden font-abnormal;
 }

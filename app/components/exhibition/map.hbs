@@ -17,8 +17,9 @@
       {{#modal-dialog 
         onClose=this.closeModal
         translucentOverlay=true
+        overlayClass=@place
         }}
-        <h1>{{modal.title}}</h1>
+        <h2>{{modal.title}}</h2>
         {{#each modal.artists as |artist|}}
           <p>{{artist}}</p>
         {{/each}}

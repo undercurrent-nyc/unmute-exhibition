@@ -31,11 +31,11 @@ export default class TilesComponent extends Component {
       dates: [
         { 
           description: "Undercurrent",
-          dates: "09.21 – 11.12 /2021",
+          dates: "09.22 – 11.12 /2021",
         },
         { 
           description: "Austrian Cultural Forum",
-          dates: "09.21 /2021 – 01.07 /2022",
+          dates: "09.22 /2021 – 01.07 /2022",
         },
       ],
     },

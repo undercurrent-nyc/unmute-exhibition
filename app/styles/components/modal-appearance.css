@@ -1,0 +1,26 @@
+.ember-modal-dialog {
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #222;
+  padding: 10px;
+  @apply w-3/4 h-3/4 md:w-1/2 md:h-1/2;
+}
+
+
+.ember-modal-dialog h2 {
+  @apply text-xl md:text-3xl font-bold;
+}
+
+.ember-modal-overlay.translucent {
+  background-color: rgba(128, 128, 128, .77);
+}
+
+.ember-modal-overlay.translucent.undercurrent {
+  background-color: rgba(30, 104, 177, .5);
+  @apply p-12 md:p-24;
+}
+
+.ember-modal-overlay.translucent.acfny {
+  background-color: rgba(238, 63, 40, .5);
+}
+

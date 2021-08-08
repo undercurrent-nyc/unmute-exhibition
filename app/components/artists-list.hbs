@@ -1,6 +1,16 @@
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
 {{#each (shuffle this.teams) as |team|}}
-  <div>
+  <div class="border-l-4
+    pl-3
+    {{if (eq team.place "acfny")
+      "border-unred"
+      (if (eq team.place "undercurrent")
+        "border-unblue"
+        "border-black"
+        )
+        }}
+        "
+    >
     <a href={{team.url}} target="_blank" rel="noopener noreferrer">
       {{#each (shuffle team.artists) as |artist|}}
         <p class="text-left font-bold text-sm md:text-2xl leading-tight">
