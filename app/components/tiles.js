@@ -28,6 +28,7 @@ export default class TilesComponent extends Component {
       title: "Exhibition",
       url: "/exhibition",
       imgur: "https://i.imgur.com/zM15PLB.jpg",
+      imgurb: "https://i.imgur.com/ZNV0O01.jpg",
       dates: [
         { 
           description: "Undercurrent",
