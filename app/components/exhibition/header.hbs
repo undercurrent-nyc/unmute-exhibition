@@ -1,44 +1,47 @@
-<div class="main-margins flex flex-row w-full justify-between pt-2 md:pt-8">
-  <div>
-    <h1 class="sr-only">un/mute</h1>
-    {{svg-jar "unmute-menu" title="un/mute logo" class="h-10 md:h-16"}}
+<header class="sticky top-0 bg-white pb-2 md:pb-2 border-b border-black">
+  <div class="main-margins flex flex-row w-full justify-between pt-2 md:pt-8">
+    <div>
+      <h1 class="sr-only">un/mute</h1>
+      {{svg-jar "unmute-menu" title="un/mute logo" class="h-10 md:h-16"}}
+    </div>
+    <div class="exhibition-icons">
+      <div>
+        <a href="https://undercurrent.nyc" role="button">
+          <span class="sr-only">Undercurrent</span>
+          {{svg-jar "undercurrent-menu" title="Undercurrent"}}
+        </a>
+      </div>
+      <div>
+        <a href="https://facebook.com/undercurrent.nyc/" role="button">
+          <span class="sr-only">Undercurrent Facebook</span>
+          {{svg-jar "facebook-menu" title="Undercurrent Facebook" class="pr-2 md:pr-3"}}
+        </a>
+      </div>
+      <div>
+        <a href="https://instagram.com/undercurrent.nyc/" role="button">
+          <span class="sr-only">Undercurrent Instagram</span>
+          {{svg-jar "instagram-menu" title="Undercurrent Instagram"}}
+        </a>
+      </div>
+      <div>
+        <a href="https://acfny.org/" role="button">
+          <span class="sr-only">Austrian Cultural Forum NYC</span>
+          {{svg-jar "austria-menu" title="Austrian Cultural Forum NYC"}}
+        </a>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/acfny/" role="button">
+          <span class="sr-only">AFCNY Facebook</span>
+          {{svg-jar "facebook-menu" title="AFCNY Facebook"}}
+        </a>
+      </div>
+      <div>
+        <a href="https://www.instagram.com/acfny" role="button">
+          <span class="sr-only">AFCNY Instagram</span>
+          {{svg-jar "instagram-menu" title="AFCNY Instagram"}}
+        </a>
+      </div>
+    </div>
   </div>
-  <div class="exhibition-icons">
-    <div>
-      <a href="https://undercurrent.nyc" role="button">
-        <span class="sr-only">Undercurrent</span>
-        {{svg-jar "undercurrent-menu" title="Undercurrent"}}
-      </a>
-    </div>
-    <div>
-      <a href="https://facebook.com/undercurrent.nyc/" role="button">
-        <span class="sr-only">Undercurrent Facebook</span>
-        {{svg-jar "facebook-menu" title="Undercurrent Facebook" class="pr-2 md:pr-3"}}
-      </a>
-    </div>
-    <div>
-      <a href="https://instagram.com/undercurrent.nyc/" role="button">
-        <span class="sr-only">Undercurrent Instagram</span>
-        {{svg-jar "instagram-menu" title="Undercurrent Instagram"}}
-      </a>
-    </div>
-    <div>
-      <a href="https://acfny.org/" role="button">
-        <span class="sr-only">Austrian Cultural Forum NYC</span>
-        {{svg-jar "austria-menu" title="Austrian Cultural Forum NYC"}}
-      </a>
-    </div>
-    <div>
-      <a href="https://www.facebook.com/acfny/" role="button">
-        <span class="sr-only">AFCNY Facebook</span>
-        {{svg-jar "facebook-menu" title="AFCNY Facebook"}}
-      </a>
-    </div>
-    <div>
-      <a href="https://www.instagram.com/acfny" role="button">
-        <span class="sr-only">AFCNY Instagram</span>
-        {{svg-jar "instagram-menu" title="AFCNY Instagram"}}
-      </a>
-    </div>
-  </div>
-</div>
+  <Exhibition::Menu />
+</header>

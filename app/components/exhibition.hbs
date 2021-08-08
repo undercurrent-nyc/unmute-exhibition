@@ -1,3 +1,60 @@
-<header class="sticky top-0 bg-white pb-2 md:pb-2 border-b border-black">
-{{yield}}
-</header>
+<main class="bg-white w-screen">
+  <Exhibition::Header />
+  <article class="exhibition w-full">
+    <section>
+      <div class="flex flex-col space-y-2 md:space-y-0 md:flex-row md:justify-between dates md:pt-4">
+        <div class="w-full md:w-5/12">
+          <div id="acfny" class="anchor" />
+          <Exhibition::Map 
+            @data={{@artworks.acfny}} 
+            @place="acfny" />
+          <Exhibition::Details
+            @dates="09.22/21 – 01.07/22"
+            @place="Austrian Cultural Forum"
+            @addr1="11 East 52nd Street"
+            @addr2="New York, NY 10022"
+            @days="Open daily"
+            @hours="10am – 6pm"
+          />
+        </div>
+        <div class="w-full md:w-7/12">
+          <div id="undercurrent" class="anchor" />
+          <Exhibition::Map 
+            @data={{@artworks.undercurrent}}
+            @place="undercurrent" />
+          <Exhibition::Details
+            @dates="09.22 – 11.21/21"
+            @place="Undercurrent"
+            @addr1="70 John St."
+            @addr2="Brooklyn, NY 11201"
+            @days="Thurs – Sun"
+            @hours="1pm – 7pm"
+          />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="anchor" id="about" />
+      <Exhibition::About />
+    </section>
+    <section class="border-black border-t">
+      <Exhibition::Credits />
+    </section>
+
+    <section class="border-black border-t">
+      <div id="artists" class="anchor" />
+      <ArtistsList />
+    </section>
+    <!-- <section class=""> -->
+    <!--   <div id="artwork" /> -->
+    <!-- </section> -->
+    <!-- <section class=""> -->
+    <!--   <div id="videos" /> -->
+    <!-- </section> -->
+    <section class="">
+      <div id="signup" class="anchor"/>
+      <UndercurrentSignup />
+    </section>
+  </article>
+  <Footer @useHope={{false}} />
+</main>
