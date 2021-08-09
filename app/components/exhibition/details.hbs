@@ -1,4 +1,6 @@
-<div class="flex justify-between {{if (eq @place "Austrian Cultural Forum") " flex-row-reverse" " flex-row"}}">
+<div class="flex justify-between {{if (eq @place "Austrian Cultural Forum") " flex-row-reverse" " flex-row"}}"
+  vocab="https://schema.org/" typeof="Organization" 
+>
   <div class="hidden md:block md:flex-grow">&nbsp;</div>
   <div class="w-full md:w-max flex-none flex flex-col justify-end
     {{if (eq @place "Austrian Cultural Forum")
@@ -8,16 +10,16 @@
     ">
     <h2 class="md:pt-3">{{@dates}}</h2>
     <div class="flex flex-row justify-between">
-      <div itemscope itemtype="https://schema.org/Organization" 
+      <div 
         class="pr-4 flex flex-col justify-center">
-        <h3 itemprop="name">{{@place}}</h3>
-        <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <p itemprop="streetAddress">{{@addr1}}</p>
+        <h3 property="name">{{@place}}</h3>
+        <div property="address" typeof="PostalAddress">
+          <p property="streetAddress">{{@addr1}}</p>
           <p>
-            <span itemprop="addressLocality">
+            <span property="addressLocality">
               {{@locality}}, {{@region}}
             </span>
-            <span itemprop="postalCode">
+            <span property="postalCode">
               {{@postcode}}
             </span>
           </p>
@@ -26,7 +28,9 @@
       <div class="w-5">
         {{svg-jar "slash" title="Slash" class="fill-current h-full"}}
       </div>
-      <div class="pl-4 flex flex-col justify-center">
+      <div class="pl-4 flex flex-col justify-center" 
+        property="openingHours" 
+        content={{@schemaHours}}>
         <p class="text-right">{{@days}}</p>
         <p class="text-right">{{@hours}}</p>
         <p class="text-right">Free admission</p>

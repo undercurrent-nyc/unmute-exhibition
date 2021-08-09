@@ -1,9 +1,14 @@
 <footer class="border-t border-black w-full pt-6 md:pt-14 main-margins flex flex-col">
 
   <div class="flex flex-row w-full pb-6">
-    <div class="austrian-cell flex items-center justify-center">
+    <div class="austrian-cell flex items-center justify-center" 
+      vocab="https://schema.org/" typeof="Organization">
       <a href="https://acfny.org/" role="button" class="w-full">
-        {{svg-jar "austrian-white" class="h-full" title="Austrian Cultural Forum NYC"}}
+        <span property="name" class="sr-only">Austrian Cultural Forum NY</span>
+        <span property="url" class="sr-only">https://acfny.org/</span>
+        <span property="logo">
+          {{svg-jar "austrian-white" class="h-full" title="Austrian Cultural Forum NY"}}
+        </span>
       </a>
     </div>
     <div class="logos-grid w-9/10 grid grid-cols-5 grid-rows-3">
@@ -13,16 +18,26 @@
         </a>
       </div>
       {{#each (shuffle this.logos) as |logo|}}
-        <div>
+        <div vocab="https://schema.org/" typeof="Organization">
           <a href={{logo.url}} role="button">
+            <span property="name" class="sr-only">{{logo.name}}</span>
+            <span property="url" class="sr-only">{{logo.url}}</span>
+            <span property="logo">
             {{svg-jar (concat logo.slug "-white") title=logo.name}}
+            </span>
           </a>
         </div>
       {{/each}}
     </div>
   </div>
-  <p class="text-xs md:text-xs w-full text-center py-4">
-    © 2021 /UNDERCURRENT /70 John St. Brooklyn, NY, 11201.<br />
+  <p class="text-xs md:text-xs w-full text-center py-4" 
+    vocab="https://schema.org/" 
+    typeof="Organization">
+    © 2021 /<span property="name">UNDERCURRENT</span> 
+    /<span property="address" typeof="PostalAddress">
+      <span property="streetAddress">70 John St.</span> 
+      <span property="addressLocality">Brooklyn, NY</span>, 
+      <span property="postalCode">11201</span></span>.<br />
     All Rights Reserved.
   </p>
 </footer>

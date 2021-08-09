@@ -48,6 +48,18 @@ ul.exhibition-menu .blue .active {
   @apply text-unblue;
 }
 
+.exhibition-about a {
+  @apply underline;
+}
+
+.exhibition-about a.blue {
+  @apply hover:text-unblue;
+}
+
+.exhibition-about a.red {
+  @apply hover:text-unred;
+}
+
 .exhibition-about p {
   @apply leading-tight pb-4;
 }

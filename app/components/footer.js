@@ -7,6 +7,11 @@ export default class FooterComponent extends Component {
     if(this.args.useHope) {
       logos.push(
         { 
+          name: "Wallonie-Bruxelles International.be aux Etats-Unis",
+          url: "http://wallonia.us/en",
+          slug: "wallonia",
+        },
+        { 
           name: "Hope Recycling Station",
           url: "http://www.h-r-s.cz/",
           slug: "hope",
@@ -20,7 +25,7 @@ export default class FooterComponent extends Component {
 
   data = [
     { 
-      name: "Co-funded by the Creative Europe Programme of the European Union",
+      name: "Creative Europe Programme of the European Union",
       url: "https://ec.europa.eu/culture/creative-europe",
       slug: "eu",
     },
@@ -68,11 +73,6 @@ export default class FooterComponent extends Component {
       name: "Romanian Cultural Institute",
       url: "https://www.rciusa.info/",
       slug: "romanian",
-    },
-    { 
-      name: "Wallonie-Bruxelles International.be aux Etats-Unis",
-      url: "http://wallonia.us/en",
-      slug: "wallonia",
     },
     { 
       name: "Goethe Institute",
