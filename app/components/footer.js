@@ -8,7 +8,7 @@ export default class FooterComponent extends Component {
       logos.push(
         { 
           name: "Hope Recycling Station",
-          url: "",
+          url: "http://www.h-r-s.cz/",
           slug: "hope",
         },
       );
@@ -21,67 +21,67 @@ export default class FooterComponent extends Component {
   data = [
     { 
       name: "Co-funded by the Creative Europe Programme of the European Union",
-      url: "",
+      url: "https://ec.europa.eu/culture/creative-europe",
       slug: "eu",
     },
     { 
       name: "EU National Institutes for Culture",
-      url: "",
+      url: "https://eunicglobal.eu",
       slug: "eunic",
     },
     { 
       name: "Polish Cultural Institute",
-      url: "",
+      url: "https://instytutpolski.pl/newyork/",
       slug: "poland",
     },
     { 
       name: "Republic of Estonia Ministry of Culture",
-      url: "",
+      url: "https://www.visitestonia.com/en/what-to-see-do/history-and-culture/",
       slug: "estonia",
     },
     { 
       name: "Flanders Delegation to the USA",
-      url: "",
+      url: "https://www.flandersintheusa.org/",
       slug: "flanders",
     },
     { 
       name: "Czech Center",
-      url: "",
+      url: "https://new-york.czechcentres.cz/en/",
       slug: "czech",
     },
     { 
       name: "Consulate General of Estonia New York",
-      url: "",
+      url: "https://newyork.mfa.ee/",
       slug: "estonia-consulate",
     },
     { 
       name: "Arts Council Malta",
-      url: "",
+      url: "https://www.artscouncilmalta.org/",
       slug: "malta",
     },
     { 
       name: "Jindřich Chalupecký Society",
-      url: "",
+      url: "https://www.sjch.cz/en/",
       slug: "chalupecky",
     },
     { 
       name: "Romanian Cultural Institute",
-      url: "",
+      url: "https://www.rciusa.info/",
       slug: "romanian",
     },
     { 
       name: "Wallonie-Bruxelles International.be aux Etats-Unis",
-      url: "",
+      url: "http://wallonia.us/en",
       slug: "wallonia",
     },
     { 
       name: "Goethe Institute",
-      url: "",
+      url: "https://www.goethe.de/ins/us/en/sta/ney.html",
       slug: "goethe",
     },
     { 
       name: "Lithuanian Culture Institute",
-      url: "",
+      url: "https://english.lithuanianculture.lt/",
       slug: "lithuanian",
     },
   ]
