@@ -47,3 +47,8 @@ ul.exhibition-menu .red .active {
 ul.exhibition-menu .blue .active {
   @apply text-unblue;
 }
+
+.exhibition-about p {
+  @apply leading-tight pb-4;
+}
+
