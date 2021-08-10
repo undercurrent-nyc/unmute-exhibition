@@ -4,40 +4,42 @@
     <section>
       <div class="flex flex-col md:space-x-4 space-y-2 md:space-y-0 md:flex-row md:justify-between dates md:pt-4">
         <div class="w-full md:w-1/2">
-          <div id="acfny" class="anchor" />
-          <Exhibition::Map 
-            @data={{@artworks.acfny}} 
-            @url="https://acfny.org/exhibition/unmute/"
-            @place="acfny" />
-          <Exhibition::Details
-            @dates="09.22/21 – 01.07/22"
-            @place="Austrian Cultural Forum"
-            @addr1="11 East 52nd Street"
-            @locality="New York"
-            @region="NY"
-            @postcode="10022"
-            @days="Open daily"
-            @hours="10am – 6pm"
-            @schemaHours="Mo,Tu,We,Th,Fr,Sa,Su 10:00-18:00"
-          />
+          <a href="https://acfny.org/exhibition/unmute/" target="_blank" rel="noopener noreferrer">
+            <div id="acfny" class="anchor" />
+            <Exhibition::Map 
+              @data={{@artworks.acfny}} 
+              @place="acfny" />
+            <Exhibition::Details
+              @dates="09.22/21 – 01.07/22"
+              @place="Austrian Cultural Forum"
+              @addr1="11 East 52nd Street"
+              @locality="New York"
+              @region="NY"
+              @postcode="10022"
+              @days="Open daily"
+              @hours="10am – 6pm"
+              @schemaHours="Mo,Tu,We,Th,Fr,Sa,Su 10:00-18:00"
+            />
+          </a>
         </div>
         <div class="w-full md:w-1/2">
-          <div id="undercurrent" class="anchor" />
-          <Exhibition::Map 
-            @url="https://undercurrent.nyc/exhibitions-and-events/2021/9/22/unmute"
-            @data={{@artworks.undercurrent}}
-            @place="undercurrent" />
-          <Exhibition::Details
-            @dates="09.22 – 11.21/21"
-            @place="Undercurrent"
-            @addr1="70 John St."
-            @locality="Brooklyn"
-            @region="NY"
-            @postcode="11201"
-            @days="Thurs – Sun"
-            @hours="1pm – 7pm"
-            @schemaHours="Th,Fr,Sa,Su 13:00-17:00"
-          />
+          <a href="https://undercurrent.nyc/exhibitions-and-events/2021/9/22/unmute" target="_blank" rel="noopener noreferrer">
+            <div id="undercurrent" class="anchor" />
+            <Exhibition::Map 
+              @data={{@artworks.undercurrent}}
+              @place="undercurrent" />
+            <Exhibition::Details
+              @dates="09.22 – 11.21/21"
+              @place="Undercurrent"
+              @addr1="70 John St."
+              @locality="Brooklyn"
+              @region="NY"
+              @postcode="11201"
+              @days="Thurs – Sun"
+              @hours="1pm – 7pm"
+              @schemaHours="Th,Fr,Sa,Su 13:00-17:00"
+            />
+          </a>
         </div>
       </div>
     </section>

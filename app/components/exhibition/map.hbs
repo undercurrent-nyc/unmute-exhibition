@@ -6,25 +6,8 @@
       "justify-end"
   }}"
   >
-  <a href={{@url}} target="_blank" rel="noopener noreferrer">
     {{svg-jar (concat @place "-map") 
       class=(concat
         (concat @place "-map")
         " h-48 md:h-32 lg:h-48 xl:h-64 2xl:h-72")}}
-  </a>
 </div>
-  {{#each @data as |modal|}}
-   {{#if (eq this.showingModal modal.id)}}
-      {{#modal-dialog 
-        onClose=this.closeModal
-        translucentOverlay=true
-        overlayClass=@place
-        }}
-        <h2>{{modal.title}}</h2>
-        {{#each modal.artists as |artist|}}
-          <p>{{artist}}</p>
-        {{/each}}
-        <button {{on "click" this.closeModal}}>Close</button>
-      {{/modal-dialog}}
-    {{/if}}
-  {{/each}}
