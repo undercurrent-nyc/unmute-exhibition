@@ -6,10 +6,12 @@
       "justify-end"
   }}"
   >
-  {{svg-jar (concat @place "-map") 
-    class=(concat
-      (concat @place "-map")
-      " h-48 md:h-72")}}
+  <a href={{@url}} target="_blank" rel="noopener noreferrer">
+    {{svg-jar (concat @place "-map") 
+      class=(concat
+        (concat @place "-map")
+        " h-48 md:h-72")}}
+  </a>
 </div>
   {{#each @data as |modal|}}
    {{#if (eq this.showingModal modal.id)}}
