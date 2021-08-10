@@ -1,5 +1,5 @@
 <div class="
-  flex flex-row h-48 md:h-72
+  flex flex-row h-48 md:h-32 lg:h-48 xl:h-64 2xl:h-72
   {{if 
     (eq @place "acfny") 
       "justify-start" 
@@ -10,7 +10,7 @@
     {{svg-jar (concat @place "-map") 
       class=(concat
         (concat @place "-map")
-        " h-48 md:h-72")}}
+        " h-48 md:h-32 lg:h-48 xl:h-64 2xl:h-72")}}
   </a>
 </div>
   {{#each @data as |modal|}}
