@@ -1,0 +1,20 @@
+.exhibition-map-container .map-bkgd {
+  fill: none;
+  stroke: #333;
+  stroke-width: 1;
+}
+
+.exhibition-map-container .map-focus {
+  fill: none;
+  stroke: #000;
+  stroke-width: 3;
+}
+
+.exhibition-map-container .map-text {
+  color: #333;
+  @apply text-3xl;
+}
+
+.exhibition-map-container .art-piece {
+  @apply font-semibold text-4xl;
+}
