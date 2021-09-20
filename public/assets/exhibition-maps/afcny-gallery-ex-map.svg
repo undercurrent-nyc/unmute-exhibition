@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1997.45 752.05">
+  <g class="map-bkgd">
+    <rect x="214.72" y="339.94" width="220.8" height="80.49" transform="translate(650.25 760.37) rotate(180)"/>
+    <line x1="413.75" y1="420.43" x2="413.75" y2="340.64"/>
+    <line x1="391.49" y1="420.43" x2="391.49" y2="340.64"/>
+    <line x1="369.59" y1="420.43" x2="369.59" y2="340.64"/>
+    <line x1="347.33" y1="420.43" x2="347.33" y2="340.64"/>
+    <line x1="324.18" y1="420.43" x2="324.18" y2="340.64"/>
+    <line x1="301.92" y1="420.43" x2="301.92" y2="340.64"/>
+    <line x1="280.02" y1="420.43" x2="280.02" y2="340.64"/>
+    <line x1="257.76" y1="420.43" x2="257.76" y2="340.64"/>
+    <line x1="235.93" y1="340.64" x2="235.93" y2="420.43"/>
+    <rect x="214.72" y="244.31" width="220.8" height="80.49"/>
+    <line x1="236.5" y1="324.79" x2="236.5" y2="245.01"/>
+    <line x1="258.76" y1="324.79" x2="258.76" y2="245.01"/>
+    <line x1="280.66" y1="324.79" x2="280.66" y2="245.01"/>
+    <line x1="302.92" y1="324.79" x2="302.92" y2="245.01"/>
+    <line x1="326.07" y1="324.79" x2="326.07" y2="245.01"/>
+    <line x1="348.33" y1="324.79" x2="348.33" y2="245.01"/>
+    <line x1="370.23" y1="324.79" x2="370.23" y2="245.01"/>
+    <line x1="392.49" y1="324.79" x2="392.49" y2="245.01"/>
+    <line x1="414.32" y1="245.01" x2="414.32" y2="324.79"/>
+    <line x1="81.94" y1="420.99" x2="81.94" y2="1.34"/>
+    <rect x="214.72" y="324.79" width="220.8" height="14.98"/>
+    <polyline points="796.44 420.99 796.44 232.5 434.82 232.5 434.82 244.16"/>
+    <path d="M795.55,247.82V232.9s-270.86-.91-270.86,0v14.92s63.3,51.49,137.47,51.55C733.91,299.43,795.55,247.82,795.55,247.82Z"/>
+    <line x1="774.96" y1="420.99" x2="774.96" y2="263.12"/>
+    <line x1="754.41" y1="420.99" x2="754.41" y2="274.75"/>
+    <line x1="733.87" y1="420.99" x2="733.87" y2="284.32"/>
+    <line x1="713.32" y1="420.99" x2="713.32" y2="291.8"/>
+    <line x1="692.77" y1="420.99" x2="692.77" y2="296.93"/>
+    <line x1="434.82" y1="176.48" x2="795.55" y2="176.48"/>
+    <polyline points="795.55 421 214.72 421 214.72 244.31"/>
+    <polyline points="1697.75 390.12 1725.07 371.21 1949.91 411.14 1949.91 407.98 1949.91 120.1 1725.07 160.03 1697.75 141.12"/>
+  </g>
+  <g class="map-focus">
+    <polygon points="434.82 244.31 434.82 1.34 1.34 1.34 1.34 421 214.72 421 214.72 244.31 434.82 244.31"/>
+    <polygon points="795.55 176.48 795.55 112.16 1695.97 112.16 1695.97 421 1284.85 421 1271.54 421 1271.54 380.06 1225.31 380.06 1225.31 421 1212.7 421 795.55 421 795.55 176.48"/>
+  </g>
+  <g class="map-text">
+    <text transform="translate(1524.08 461.04)">
+      Main Gallery
+    </text>
+    <text transform="translate(1.34 461.04)">
+      Upper Gallery
+    </text>
+    <text transform="translate(1989.95 377.2) rotate(-90)">
+      East 52nd Street
+    </text>
+  </g>
+  <g class="art-piece mirutziu-shavers-" data-piece="mirutziu-shavers-2">
+    <text transform="translate(10.72 528.55)">
+      6
+      <tspan x="0" y="36">
+      Alex Mirutziu
+    </tspan>
+    <tspan x="0" y="72">
+      Sydney Shavers
+    </tspan>
+  </text>
+  <circle cx="43.45" cy="370.29" r="27.46"/>
+  <text transform="translate(35.41 379.1)">
+    6
+  </text>
+</g>
+<g class="art-piece bezzina-hittmeier" data-piece="bezzina-hittmeier">
+  <text transform="translate(10.72 672.46)">
+    10
+    <tspan x="0" y="36">
+    Aaron Bezzina
+  </tspan>
+  <tspan x="0" y="72" xml:space="preserve">
+    Kyle Hittmeier
+  </tspan>
+</text>
+<circle cx="243.79" cy="57.55" r="27.46"/>
+<text transform="translate(227.71 66.36)">
+  10
+</text>
+</g>
+<g class="art-piece grey-neu" data-piece="grey-neu">
+  <text transform="translate(810.05 528.55)">
+    8
+    <tspan x="0" y="36">
+    Kris Grey
+  </tspan>
+  <tspan x="0" y="72">
+    Barbara Neu
+  </tspan>
+</text>
+<circle cx="1206.79" cy="159.55" r="27.46"/>
+<text transform="translate(1198.75 168.36)">
+  8
+</text>
+</g>
+<g class="art-piece aksu-maldonado" data-piece="aksu-maldonado">
+  <text transform="translate(810.05 672.46)">
+    9
+    <tspan x="0" y="36">
+    Eren Aksu
+  </tspan>
+  <tspan x="0" y="72">
+    Sheila Maldonado
+  </tspan>
+</text>
+<circle cx="976.7" cy="370.68" r="27.46"/>
+<text transform="translate(968.66 379.49)">
+  9
+</text>
+</g>
+<g class="art-piece camilleri-uibopuu" data-piece="camilleri-uibopuu">
+  <text transform="translate(1502.55 528.55)">
+    7
+    <tspan x="0" y="36">
+    Alex Camilleri
+  </tspan>
+  <tspan x="0" y="72">
+    Terttu Uibopuu
+  </tspan>
+</text>
+<circle cx="1638.92" cy="315.46" r="27.46"/>
+<text transform="translate(1630.88 324.27)">
+  7
+</text>
+</g>
+</svg>
