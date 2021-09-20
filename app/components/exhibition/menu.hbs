@@ -1,24 +1,29 @@
-<ul class="w-3/4 md:w-1/3 flex-wrap flex flex-row main-margins justify-between
+<ul class="w-3/4 md:w-2/3 flex-wrap flex flex-row main-margins justify-between
   text-sm md:text-2xl
   pt-3 md:pt-6
   space-x-2
   exhibition-menu
   " role="navigation">
   <li>
+      <LinkTo @route="index">
+        /home
+      </LinkTo> 
+  </li>
+  <li>
       <a href="#about">
         /about
       </a> 
   </li>
-  <!-- <li class="red"> -->
-  <!--     <a href="#acfny"> -->
-  <!--       /ACFNY -->
-  <!--     </a> --> 
-  <!-- </li> -->
-  <!-- <li class="blue"> -->
-  <!--     <a href="#undercurrent"> -->
-  <!--       /maps -->
-  <!--     </a> --> 
-  <!-- </li> -->
+  <li class="text-unred">
+      <a href="#acfny">
+        /ACFNY
+      </a> 
+  </li>
+  <li class="text-unblue">
+      <a href="#undercurrent">
+        /Undercurrent
+      </a> 
+  </li>
   <li>
       <a href="#artists">
         /artists
