@@ -2,8 +2,8 @@
   {{#each @data as |artwork|}}
     <div class="art-list pt-8 main-margins flex flex-col">
       <div id="{{artwork.id}}" class="anchor" />
-      <div class="flex justify-end">
-        {{svg-jar (concat "token-" artwork.token) class="h-8"}}
+        <div class="flex justify-end {{if (eq @place "acfny") "text-unred" "text-unblue"}}">
+          {{svg-jar (concat "token-" artwork.token) class="h-8 fill-current"}}
       </div>
       <div class="flex flex-row">
         <div class="
@@ -22,9 +22,13 @@
               {{artwork.artists}}
               {{#if artwork.title}}
                 <br />
-                <span class="italic">{{artwork.title}}</span>, {{artwork.year}}
+                <small><span class="italic">{{artwork.title}}</span>, {{artwork.year}}</small>
               {{/if}}
             </h2>
+            {{#if artwork.description}}
+              <p class="pb-6">{{artwork.description}}</p>
+            {{/if}}
+
 
             {{#each artwork.pieces as |piece|}}
               <div class="pb-6">
