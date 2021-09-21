@@ -10,6 +10,8 @@ export default class ExhibitionRoute extends Route {
           artists: "Mo Kong (NYC) + Olesja Katšanovskaja-Münd (Estonia)",
           pieces: [
             {
+              type: "MediaObject",
+              duration: "00:00:26",
               artists: "Mo Kong + Olesja Katšanovskaja-Münd",
               title: "Backwards Transition",
               year: 2021,
@@ -17,6 +19,9 @@ export default class ExhibitionRoute extends Route {
               dimensions: "Runtime: 26 seconds",
             },
             {
+              type: "VisualArtwork",
+              height: "91 inches",
+              width: "122 inches",
               artists: "Mo Kong + Olesja Katšanovskaja-Münd",
               title: "Sociological Mining",
               year: 2021,
@@ -37,6 +42,8 @@ export default class ExhibitionRoute extends Route {
           artists: "Mariella Cassar-Cordina (Malta) + Nicola Ginzel (Austria)",
           pieces: [
             {
+              type: "MediaObject",
+              duration: "00:09:44",
               artists: "Mariella Cassar-Cordina + Nicola Ginzel",
               title: "Sonos Civitatem MMXX",
               year: 2020,
@@ -44,6 +51,7 @@ export default class ExhibitionRoute extends Route {
               dimensions: "Runtime: 9 minutes, 44 seconds",
             },
             {
+              type: "SheetMusic",
               artists: "Mariella Cassar-Cordina",
               title: "Sonos Civitatem MMXX",
               year: 2020,
@@ -51,6 +59,9 @@ export default class ExhibitionRoute extends Route {
               dimensions: "11 x 17 inches",
             },
             {
+              type: "VisualArtwork",
+              height: "35.4 inches",
+              width: "23.6 inches",
               artists: "Nicola Ginzel",
               title: "Affordable Health Care for All",
               year: 2020,
@@ -71,13 +82,20 @@ export default class ExhibitionRoute extends Route {
           artists: "Justyna Górowska (Poland) + Ieva Mediodia (Lithuania)",
           pieces: [
             {
+              type: "VisualArtwork",
+              height: "13.5 inches",
+              width: "41 inches",
+              artists: "Justyna Górowska + Ieva Mediodia",
               title: "ARKTIKAANTARKTIKA  0.9",
               year: 2021,
               material: "Giclee on Hahnemühle Photo Rag paper",
               dimensions: "13.5 x 41 inches",
             },
             {
+              type: "MediaObject",
+              duration: "00:03:17",
               title: "Arktikaantarktika 0.9",
+              artists: "Justyna Górowska + Ieva Mediodia",
               year: "2020–21",
               material: "Video",
               dimensions: "Runtime: 3 minutes, 17 seconds",
@@ -96,6 +114,7 @@ export default class ExhibitionRoute extends Route {
           artists: "Luisa Muhr (Austria) + Ada Van Hoorebeke (Flanders)",
           pieces: [
             {
+              type: "CreativeWork",
               artists: "Ada Van Hoorebeke + Luisa Muhr",
               title: "Stoff Stuk / Go-to Shapes",
               year: 2021,
@@ -115,6 +134,7 @@ export default class ExhibitionRoute extends Route {
           artists: "Gabrielė Gervickaitė (Lithuania) + Yi Hsuan Lai (NYC)",
           pieces: [
             {
+              type: "CreativeWork",
               artists: "Gabrielė Gervickaitė + Yi Hsuan Lai",
               titles: [
                 "Where are you at this moment? — Bounding touch", 
@@ -141,6 +161,7 @@ export default class ExhibitionRoute extends Route {
           artists: "Alex Mirutziu (Romania) + Sydney Shavers (NYC)",
           pieces: [
             {
+              type: "VisualArtwork",
               artists: "Alex Mirutziu",
               title: "Seven places I can’t go to but talk to",
               year: 2021,
@@ -148,6 +169,7 @@ export default class ExhibitionRoute extends Route {
               dimensions: "Dimensions variable",
             },
             {
+              type: "VisualArtwork",
               artists: "Sydney Shavers",
               title: "Untitled (Sit)",
               year: 2021,
@@ -168,6 +190,8 @@ export default class ExhibitionRoute extends Route {
           artists: "Alex Camilleri (Malta) + Terttu Uibopuu (Estonia)",
           pieces: [
             {
+              type: "MediaObject",
+              duration: "00:03:12",
               artists: "Alex Camilleri + Terttu Uibopuu",
               title: "76% Humidity, Chance of Rain",
               year: 2020,
@@ -188,6 +212,8 @@ export default class ExhibitionRoute extends Route {
           artists: "Barbara Maria Neu (Austria) + Kris Grey (NYC)",
           pieces: [
             {
+              type: "MediaObject",
+              duration: "00:04:08",
               artists: "Kris Grey + Barbara Maria Neu",
               title: "Miss(ing)",
               year: 2021,
@@ -208,6 +234,9 @@ export default class ExhibitionRoute extends Route {
           artists: "Eren Aksu (Germany) + Sheila Maldonado (NYC)",
           pieces: [
             {
+              type: "VisualArtwork",
+              height: "8.5 inches",
+              width: "11 inches",
               artists: "Eren Aksu + Sheila Maldonado",
               title: "STILL",
               year: 2021,
@@ -229,6 +258,8 @@ export default class ExhibitionRoute extends Route {
           author: "Daina Mattis",
           pieces: [
             {
+              type: "MediaObject",
+              duration: "00:01:50",
               artists: "Kyle Hittmeier",
               title: "Andromeda",
               year: 2021,
@@ -236,6 +267,10 @@ export default class ExhibitionRoute extends Route {
               dimensions: "Runtime: 1 minute, 50 seconds",
             },
             {
+              type: "VisualArtwork",
+              height: "40 inches",
+              depth: "62 inches",
+              width: "102.4 inches",
               artists: "Aaron Bezzina",
               title: "Double Catapult",
               year: 2021,
@@ -255,6 +290,9 @@ export default class ExhibitionRoute extends Route {
           artists: "H. Lan Thao Lam (NYC) + Sanne De Wilde (Flanders, Belgium)",
           pieces: [
             {
+              type: "VisualArtwork",
+              height: "101 inches",
+              width: "60 inches, 22 inches",
               artists: "H. Lan Thao Lam + Sanne De Wilde",
               title: "HERE/tHERE",
               year: "2021",
@@ -277,6 +315,9 @@ export default class ExhibitionRoute extends Route {
           artists: "Sanne De Wilde (Flanders, Belgium) + H. Lan Thao Lam (NYC)",
           pieces: [
             {
+              type: "VisualArtwork",
+              height: "80 inches",
+              width: "120 inches",
               artists: "H. Lan Thao Lam + Sanne De Wilde",
               title: "HERE/tHERE",
               year: "2021",
@@ -297,6 +338,8 @@ export default class ExhibitionRoute extends Route {
           artists: "Ana Bera (Poland) + Saddie Choua (Flanders, Belgium)",
           pieces: [
             {
+              type: "MediaObject",
+              duration: "00:08:00",
               artists: "Anna Bera + Saddie Choua",
               title: "Close Up Black",
               year: "2020–21",
@@ -320,6 +363,9 @@ export default class ExhibitionRoute extends Route {
           year: 2021,
           pieces: [
             {
+              type: "VisualArtwork",
+              height: "14 inches",
+              width: "11 inches",
               artists: "Emily Shanahan",
               titles: ["Grid drawing 1", "Grid drawing 2", "Grid drawing 3", "Grid drawing 4", "Grid drawing 5", "Grid drawing 6"],
               year: "2021",
@@ -327,6 +373,9 @@ export default class ExhibitionRoute extends Route {
               dimensions: "14 x 11 inches each",
             },
             {
+              type: "VisualArtwork",
+              height: "16.5 inches",
+              width: "11.4 inches",
               artists: "Marie Lukáčová",
               titles: ["Eye In My Hole", "Havean", "Mystic Touch", "Ou My Queen", "Snakes"],
               year: "2021",
@@ -348,6 +397,7 @@ export default class ExhibitionRoute extends Route {
           artists: "Emmanuel Massillon (NYC) + Justyna Banaszczyk/FOQL (Poland)",
           pieces: [
             {
+              type: "VisualArtwork",
               artists: "FOQL + Emmanuel Massillon",
               title: "[Untitled]",
               year: 2021,

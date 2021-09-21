@@ -31,19 +31,43 @@
 
 
             {{#each artwork.pieces as |piece|}}
-              <div class="pb-6">
-                <h3 class="text-2xl font-semibold text-right">{{piece.artists}}<br />
+              <div class="pb-6"
+                vocab="https://schema.org/" 
+                typeof={{piece.type}}
+                >
+                <h3 class="text-2xl font-semibold text-right"
+                  property="creator">{{piece.artists}}<br />
                   {{#if piece.titles}}
                     {{#each piece.titles as |title|}}
-                      <span class="italic">{{title}}</span>, 
+                      <span property="name" class="italic">{{title}}</span>, 
                     {{/each}}
                   {{else}}
-                    <span class="italic">{{piece.title}}</span>, 
+                    <span class="italic" property="name">
+                      {{piece.title}}
+                    </span>, 
                   {{/if}}
-                  {{piece.year}}
+                  <span property="copyrightYear">{{piece.year}}</span>
                 </h3>
-                <p class="text-right">{{html-safe piece.material}}</p>
+                <p class="text-right" property="material">
+                  {{html-safe piece.material}}
+                </p>
                 <p class="text-right">{{piece.dimensions}}</p>
+                <p class="hidden" property="url">https://unmute.nyc/exhibition/#{{artwork.id}}</p>
+                <p class="hidden" property="datePublished">2021-09-22</p>
+                {{#if piece.duration}}
+                  <p class="hidden" property="duration">{{piece.duration}}</p>
+                {{/if}}
+                {{#if piece.height}}
+                  <p class="hidden" property="height">{{piece.height}}</p>
+                {{/if}}
+                {{#if piece.width}}
+                  <p class="hidden" property="width">{{piece.width}}</p>
+                {{/if}}
+                {{#if piece.depth}}
+                  <p class="hidden" property="depth">{{piece.depth}}</p>
+                {{/if}}
+                  <p class="hidden" property="description">{{artwork.blurb}}</p>
+                  <p class="hidden" property="editor">{{artwork.author}}</p>
               </div>
             {{/each}}
             <p class="font-semibold">/Video {{artwork.video.title}}</p>
