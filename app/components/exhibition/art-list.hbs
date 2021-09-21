@@ -1,0 +1,55 @@
+<div class="pb-8">
+  {{#each @data as |artwork|}}
+    <div class="art-list pt-8 main-margins flex flex-col">
+      <div id="{{artwork.id}}" class="anchor" />
+      <div class="flex justify-end">
+        {{svg-jar (concat "token-" artwork.token) class="h-8"}}
+      </div>
+      <div class="flex flex-row">
+        <div class="
+          md:w-3/5
+          ">
+          <p class="text-justify text-xl">{{html-safe artwork.blurb}}</p>
+          <p class="pt-2">/{{artwork.author}}</p>
+        </div>
+        <div class="
+          pl-6
+          md:w-2/5
+          flex flex-col justify-between items-end
+          ">
+          <div class="flex flex-col items-end">
+            <h2 class="text-4xl font-semibold">
+              {{artwork.artists}}
+              {{#if artwork.title}}
+                <br />
+                <span class="italic">{{artwork.title}}</span>, {{artwork.year}}
+              {{/if}}
+            </h2>
+
+            {{#each artwork.pieces as |piece|}}
+              <div class="pb-6">
+                <h3 class="text-2xl font-semibold text-right">{{piece.artists}}<br />
+                  {{#if piece.titles}}
+                    {{#each piece.titles as |title|}}
+                      <span class="italic">{{title}}</span>, 
+                    {{/each}}
+                  {{else}}
+                    <span class="italic">{{piece.title}}</span>, 
+                  {{/if}}
+                  {{piece.year}}
+                </h3>
+                <p class="text-right">{{html-safe piece.material}}</p>
+                <p class="text-right">{{piece.dimensions}}</p>
+              </div>
+            {{/each}}
+            <p class="font-semibold">/Video {{artwork.video.title}}</p>
+            <p><a href={{artwork.video.link}} target="_blank"
+                rel="noopener noreferrer"
+                >{{artwork.video.link}}</a></p>
+          </div>
+          <a href="#{{@place}}" class="justify-self-end">Back to Map</a>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>

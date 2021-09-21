@@ -57,9 +57,26 @@
       <div id="artists" class="anchor" />
       <ArtistsList />
     </section>
-    <!-- <section class=""> -->
-    <!--   <div id="artwork" /> -->
-    <!-- </section> -->
+
+    <section class="full-width">
+      <div id="artwork" class="anchor" />
+      <Exhibition::MapBanner
+        @details={{this.details.acfny}}
+      />
+      <Exhibition::ArtList
+        @place="acfny"
+        @data={{@artworks.acfny}}
+        />
+    </section>
+    <section class="full-width">
+      <Exhibition::MapBanner
+        @details={{this.details.undercurrent}}
+      />
+      <Exhibition::ArtList 
+        @place="undercurrent"
+        @data={{@artworks.undercurrent}}
+        />
+    </section>
     <!-- <section class=""> -->
     <!--   <div id="videos" /> -->
     <!-- </section> -->

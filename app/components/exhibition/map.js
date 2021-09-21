@@ -1,21 +1,10 @@
 import Component from '@glimmer/component';
-import { tracked } from "@glimmer/tracking";
 import { action } from "@ember/object";
-import { select } from "d3-selection";
+import { selectAll, select } from "d3-selection";
 import { easeSin } from "d3-ease";
 import { transition } from "d3-transition";
 
 export default class ExhibitionMapComponent extends Component {
-
-  @tracked showingModal = "none";
-
-  @action closeModal(){
-    this.showingModal = "none";
-  }
-
-  @action showModal(id){
-    this.showingModal = id;
-  }
 
   get color(){
     if(this.args.place === "acfny"){
@@ -25,29 +14,43 @@ export default class ExhibitionMapComponent extends Component {
     return "#1e67b1";
   }
 
+  center(element){
+    const { x, y, width, height } = element.node().getBBox();
+    return {
+      x: x + width/2,
+      y: y + height/2
+    }
+  }
 
-  @action addDots() {
-    const pulse = this.pulse;
-    const g = select(`svg.${this.args.place}-map`)
-      .insert("g");
-    g.selectAll("circle")
-      .data(this.args.data)
-      .enter()
-        .append("circle")
-        .attr("cx", d => d.x)
-        .attr("cy", d => d.y)
-        .attr("r", 70)
-        .on("click", d => this.showModal(d.id))
-        .attr("fill", this.color)
-        .attr("stroke", this.color)
-        .each(function(d) {;
-          const self = select(this);
-          console.log(self);
-          pulse(self);
-        });
+  @action startPulseAndClickHandlers() {
+    const { pulse, color, center } = this;
+    selectAll(`.art-piece.${this.args.place}`)
+      .on("click", function() {
+        location.hash = `#${this.dataset.piece}`;
+        console.log(this.dataset.piece);
+      })
+      .each(function() {
+        const g = select(this);
+        const {x, y} = center(g.select("path.circle"));
+        g.append("circle")
+          .attr("cx", x)
+          .attr("cy", y)
+          .attr("r", 27)
+          .attr("fill", "white")
+          .lower();
+        const pulser = g.append("circle")
+          .attr("cx", x)
+          .attr("cy", y)
+          .attr("r", 20)
+          .attr("fill", color)
+          .attr("stroke", color)
+          .lower();
+        pulse(pulser);
+      });
   }
 
   pulse(element) {
+    console.log("pulse");
     (function repeat() {
       element
         .transition()

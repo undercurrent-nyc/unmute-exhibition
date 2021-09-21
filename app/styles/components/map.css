@@ -18,3 +18,16 @@
 .exhibition-map-container .art-piece {
   @apply font-semibold text-4xl;
 }
+
+.exhibition-map-container .art-piece text,
+.exhibition-map-container .art-piece path {
+  pointer-events: bounding-box;
+}
+
+.exhibition-map-container .art-piece.undercurrent:hover {
+  fill: #1e67b1;
+}
+
+.exhibition-map-container .art-piece.acfny:hover {
+  fill: #ee3e28;
+}

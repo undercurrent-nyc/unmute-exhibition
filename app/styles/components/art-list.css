@@ -1,0 +1,4 @@
+article.exhibition section .art-list h2 {
+  @apply text-4xl font-semibold text-right; 
+}
+

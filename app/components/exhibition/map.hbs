@@ -1,4 +1,6 @@
-<div class="exhibition-map-container main-margins">
+<div class="exhibition-map-container main-margins"
+  {{did-insert this.startPulseAndClickHandlers}}
+  >
   {{#if (eq @place "acfny")}}
     <div class="py-6">
       {{svg-jar "acfny-mezzanine-ex-map"}}
