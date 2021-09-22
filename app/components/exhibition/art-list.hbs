@@ -5,15 +5,16 @@
         <div class="flex justify-end {{if (eq @place "acfny") "text-unred" "text-unblue"}}">
           {{svg-jar (concat "token-" artwork.token) class="h-8 fill-current"}}
       </div>
-      <div class="flex flex-row">
+      <div class="flex flex-col-reverse md:flex-row">
         <div class="
           md:w-3/5
           ">
-          <p class="text-justify text-xl">{{html-safe artwork.blurb}}</p>
-          <p class="pt-2">/{{artwork.author}}</p>
+          <p class="text-justify md:text-xl tracking-tight md:tracking-normal">{{html-safe artwork.blurb}}</p>
+          <p class="text-sm md:text-base pt-2">/{{artwork.author}}</p>
         </div>
         <div class="
-          pl-6
+          md:pl-6
+          pb-6 md:pb-0
           md:w-2/5
           flex flex-col justify-between items-end
           ">
@@ -31,11 +32,11 @@
 
 
             {{#each artwork.pieces as |piece|}}
-              <div class="pb-6"
+              <div class="pb-4 md:pb-6"
                 vocab="https://schema.org/" 
                 typeof={{piece.type}}
                 >
-                <h3 class="text-2xl font-semibold text-right"
+                <h3 class="text-base md:text-2xl font-semibold text-right"
                   property="creator">{{piece.artists}}<br />
                   {{#if piece.titles}}
                     {{#each piece.titles as |title|}}
@@ -72,10 +73,11 @@
             {{/each}}
             <p class="font-semibold">/Video {{artwork.video.title}}</p>
             <p><a href={{artwork.video.link}} target="_blank"
+                class="underline"
                 rel="noopener noreferrer"
                 >{{artwork.video.link}}</a></p>
           </div>
-          <a href="#{{@place}}" class="justify-self-end">Back to Map</a>
+          <a href="#{{@place}}" class="pt-4 justify-self-end underline font-semibold md:font-normal">Back to Map</a>
         </div>
       </div>
     </div>

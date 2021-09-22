@@ -37,7 +37,7 @@ article.exhibition section li {
 article .anchor {
   /* top: -6.75rem; for mobile */
   /* top: -13rem;  for main */
-  @apply -top-27 md:-top-44 block relative invisible;
+  @apply -top-30 md:-top-42 block relative invisible;
 }
 
 ul.exhibition-menu .active {

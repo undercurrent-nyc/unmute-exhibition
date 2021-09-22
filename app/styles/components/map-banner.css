@@ -1,16 +1,16 @@
 .map-banner {
-  @apply w-full flex flex-row justify-between text-white px-16 py-4;
+  @apply w-full flex flex-col md:flex-row justify-center md:justify-between text-white p-4 md:px-16 py-4 space-y-4 md:space-y-0;
 }
 
 article.exhibition section h2.map-banner-h2 {
-  @apply font-semibold md:text-3xl pb-0;
+  @apply font-semibold text-base md:text-3xl pb-0;
 }
 
 article.exhibition section .map-banner p {
-  @apply text-2xl;
+  @apply text-sm md:text-2xl;
 }
 
 article.exhibition section .map-banner .xs p {
-  @apply text-base;
+  @apply text-sm leading-snug md:leading-normal md:text-base;
 }
 
