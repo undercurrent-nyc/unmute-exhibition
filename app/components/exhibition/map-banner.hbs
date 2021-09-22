@@ -7,7 +7,10 @@
 >
   <div class="w-full md:w-max flex-none flex flex-col justify-end
     ">
-    <div class="flex flex-row justify-between">
+    <a href={{@details.url}} 
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex flex-row justify-between">
       <div 
         class="pr-4 flex flex-col justify-center">
         <h2 class="map-banner-h2" property="name">{{@details.place}}</h2>
@@ -33,7 +36,7 @@
         <p class="text-right">{{@details.hours}}</p>
         <p class="text-right">Free admission</p>
       </div>
-    </div>
+    </a>
   </div>
   <a href={{@details.directions.link}} target="_blank" rel="noopener noreferrer"
     class="flex flex-row w-full md:w-1/3">
