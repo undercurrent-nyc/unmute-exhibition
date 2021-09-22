@@ -170,6 +170,9 @@ export default class ExhibitionRoute extends Route {
             },
             {
               type: "VisualArtwork",
+              height: "24 inches",
+              width: "24 inches",
+              depth: "24 inches",
               artists: "Sydney Shavers",
               title: "Untitled (Sit)",
               year: 2021,
