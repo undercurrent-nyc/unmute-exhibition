@@ -177,7 +177,7 @@ export default class ExhibitionRoute extends Route {
               title: "Untitled (Sit)",
               year: 2021,
               material: "Wood, paint and fasteners",
-              dimensions: "24 x 10 x 24 inches each",
+              dimensions: "24 x 24 x 24 inches each",
             },
           ],
           video: { 
