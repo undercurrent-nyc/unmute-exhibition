@@ -396,7 +396,7 @@ export default class ExhibitionRoute extends Route {
         {
           token: 4,
           id: "foql-massillon",
-          title: "Some title",
+          title: "[Untitled]",
           artists: "Emmanuel Massillon (NYC) + Justyna Banaszczyk/FOQL (Poland)",
           pieces: [
             {
