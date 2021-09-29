@@ -338,7 +338,7 @@ export default class ExhibitionRoute extends Route {
         {
           token: 2,
           id: "bera-choua",
-          artists: "Ana Bera (Poland) + Saddie Choua (Flanders, Belgium)",
+          artists: "Anna Bera (Poland) + Saddie Choua (Flanders, Belgium)",
           pieces: [
             {
               type: "MediaObject",
