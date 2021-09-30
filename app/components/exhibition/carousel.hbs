@@ -1,0 +1,15 @@
+<AnimatedContainer
+  class="overflow-x-hidden overflow-y-hidden"
+  {{did-insert (fn this.startCarousel 2)}}
+  >
+  {{#animated-value this.activePhoto
+    duration=this.transitionDuration
+    use=this.transition
+    as |photo|}}
+  <ResponsiveImage
+    @src={{photo}}
+  />
+  {{/animated-value}}
+</AnimatedContainer>
+    
+

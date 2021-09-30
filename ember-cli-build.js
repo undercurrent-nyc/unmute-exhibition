@@ -6,6 +6,14 @@ const tailwind = require("tailwindcss");
 
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
+    "responsive-image": {
+      images: [
+        {
+          include: "assets/exhibition-photos/*",
+          widths: [1500, 750, 375],
+        },
+      ],
+    },
     "ember-cli-babel": {
       includePolyfill: true, //so it works on IEii
     },

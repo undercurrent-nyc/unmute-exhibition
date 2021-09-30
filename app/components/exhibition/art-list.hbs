@@ -9,6 +9,16 @@
         <div class="
           md:w-3/5
           ">
+          {{#if (eq artwork.photos 1)}}
+            <ResponsiveImage 
+              @src={{concat "assets/exhibition-photos/" artwork.id "-1.jpg"}}
+            />
+          {{/if}}
+
+          {{#if (gt artwork.photos 1)}}
+            <Exhibition::Carousel @id={{artwork.id}} @photoCount={{artwork.photos}} />
+          {{/if}}
+
           <p class="text-justify md:text-xl tracking-tight md:tracking-normal">{{html-safe artwork.blurb}}</p>
           <p class="text-sm md:text-base pt-2">/{{artwork.author}}</p>
         </div>

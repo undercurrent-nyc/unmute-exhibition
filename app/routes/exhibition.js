@@ -6,6 +6,7 @@ export default class ExhibitionRoute extends Route {
       acfny: [
         {
           token: 1,
+          photos: 1,
           id: "kong-katsanovskaja-mund",
           artists: "Mo Kong (NYC) + Olesja Katšanovskaja-Münd (Estonia)",
           pieces: [
@@ -38,6 +39,7 @@ export default class ExhibitionRoute extends Route {
         },
         {
           token: 2,
+          photos: 4,
           id: "cassar-cordina-ginzel",
           artists: "Mariella Cassar-Cordina (Malta) + Nicola Ginzel (Austria)",
           pieces: [
@@ -78,6 +80,7 @@ export default class ExhibitionRoute extends Route {
         },
         {
           token: 3,
+          photos: 3,
           id: "gorowska-mediodia",
           artists: "Justyna Górowska (Poland) + Ieva Mediodia (Lithuania)",
           pieces: [
@@ -110,6 +113,7 @@ export default class ExhibitionRoute extends Route {
         },
         {
           token: 4,
+          photos: 4,
           id: "muhr-van-hoorebeke",
           artists: "Luisa Muhr (Austria) + Ada Van Hoorebeke (Flanders)",
           pieces: [
@@ -130,6 +134,7 @@ export default class ExhibitionRoute extends Route {
         },
         {
           token: 5,
+          photos: 5,
           id: "gervickaite-lai",
           artists: "Gabrielė Gervickaitė (Lithuania) + Yi Hsuan Lai (NYC)",
           pieces: [
@@ -157,6 +162,7 @@ export default class ExhibitionRoute extends Route {
         },
         {
           token: 6,
+          photos: 3,
           id: "mirutziu-shavers",
           artists: "Alex Mirutziu (Romania) + Sydney Shavers (NYC)",
           pieces: [
@@ -189,6 +195,7 @@ export default class ExhibitionRoute extends Route {
         },
         {
           token: 7,
+          photos: 4,
           id: "camilleri-uibopuu",
           artists: "Alex Camilleri (Malta) + Terttu Uibopuu (Estonia)",
           pieces: [
@@ -211,6 +218,7 @@ export default class ExhibitionRoute extends Route {
         },
         {
           token: 8,
+          photos: 3,
           id: "grey-neu",
           artists: "Barbara Maria Neu (Austria) + Kris Grey (NYC)",
           pieces: [
@@ -233,6 +241,7 @@ export default class ExhibitionRoute extends Route {
         },
         {
           token: 9,
+          photos: 5,
           id: "aksu-maldonado",
           artists: "Eren Aksu (Germany) + Sheila Maldonado (NYC)",
           pieces: [
@@ -256,6 +265,7 @@ export default class ExhibitionRoute extends Route {
         },
         {
           token: 10,
+          photos: 4,
           id: "bezzina-hittmeier",
           artists: "Aaron Bezzina (Malta) + Kyle Hittmeier (NYC)",
           author: "Daina Mattis",
@@ -289,6 +299,7 @@ export default class ExhibitionRoute extends Route {
         },
         {
           token: 11,
+          photos: 3,
           id: "lam-de-wilde",
           artists: "H. Lan Thao Lam (NYC) + Sanne De Wilde (Flanders, Belgium)",
           pieces: [
@@ -337,6 +348,7 @@ export default class ExhibitionRoute extends Route {
         },
         {
           token: 2,
+          photos: 5,
           id: "bera-choua",
           artists: "Anna Bera (Poland) + Saddie Choua (Flanders, Belgium)",
           pieces: [
@@ -359,6 +371,7 @@ export default class ExhibitionRoute extends Route {
         },
         {
           token: 3,
+          photos: 2,
           id: "lukacova-shanahan",
           artists: "Marie Lukáčová (Czech Republic) + Emily Shanahan (NYC)",
           title: "Conversations between February and May",
@@ -395,6 +408,7 @@ export default class ExhibitionRoute extends Route {
         },
         {
           token: 4,
+          photos: 1,
           id: "foql-massillon",
           title: "[Untitled]",
           artists: "Emmanuel Massillon (NYC) + Justyna Banaszczyk/FOQL (Poland)",
