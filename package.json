@@ -54,6 +54,7 @@
     "ember-page-title": "^6.2.2",
     "ember-qunit": "^4.6.0",
     "ember-resolver": "^8.0.2",
+    "ember-responsive-image": "^3.1.1",
     "ember-router-scroll": "^4.0.2",
     "ember-scroll-spy": "^0.0.8",
     "ember-source": "~3.23.1",
