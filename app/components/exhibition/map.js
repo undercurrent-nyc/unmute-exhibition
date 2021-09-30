@@ -27,7 +27,6 @@ export default class ExhibitionMapComponent extends Component {
     selectAll(`.art-piece.${this.args.place}`)
       .on("click", function() {
         location.hash = `#${this.dataset.piece}`;
-        console.log(this.dataset.piece);
       })
       .each(function() {
         const g = select(this);
@@ -50,7 +49,6 @@ export default class ExhibitionMapComponent extends Component {
   }
 
   pulse(element) {
-    console.log("pulse");
     (function repeat() {
       element
         .transition()

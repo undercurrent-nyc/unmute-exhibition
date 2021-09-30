@@ -15,7 +15,6 @@ export default class ExhibitionCarouselComponent extends Component {
 
   @action
   * transition({ insertedSprites, removedSprites}) {
-    console.log(insertedSprites, removedSprites);
     for (let sprite of removedSprites) {
       fadeOut(sprite);
     }
@@ -30,7 +29,6 @@ export default class ExhibitionCarouselComponent extends Component {
 
   @action
   startCarousel(count) {
-    console.log(this.activePhoto);
     setTimeout(() => {
       this.activePhoto = this.src(count);
       if(count < this.args.photoCount) {
