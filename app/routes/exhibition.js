@@ -7,6 +7,7 @@ export default class ExhibitionRoute extends Route {
         {
           token: 1,
           photos: 1,
+          photoScheme: "A1-Mo+Olesja",
           id: "kong-katsanovskaja-mund",
           artists: "Mo Kong (NYC) + Olesja Katšanovskaja-Münd (Estonia)",
           pieces: [
@@ -40,6 +41,7 @@ export default class ExhibitionRoute extends Route {
         {
           token: 2,
           photos: 4,
+          photoScheme: "A2-#-Mariella+Nicola",
           id: "cassar-cordina-ginzel",
           artists: "Mariella Cassar-Cordina (Malta) + Nicola Ginzel (Austria)",
           pieces: [
@@ -81,6 +83,7 @@ export default class ExhibitionRoute extends Route {
         {
           token: 3,
           photos: 3,
+          photoScheme: "A3-#-Ieva+Justyna",
           id: "gorowska-mediodia",
           artists: "Justyna Górowska (Poland) + Ieva Mediodia (Lithuania)",
           pieces: [
@@ -114,6 +117,7 @@ export default class ExhibitionRoute extends Route {
         {
           token: 4,
           photos: 4,
+          photoScheme: "A4-#-Luisa+Ada",
           id: "muhr-van-hoorebeke",
           artists: "Luisa Muhr (Austria) + Ada Van Hoorebeke (Flanders)",
           pieces: [
@@ -134,7 +138,8 @@ export default class ExhibitionRoute extends Route {
         },
         {
           token: 5,
-          photos: 5,
+          photos: 11,
+          photoScheme: "A5-#-Gabriele+YiHsuan",
           id: "gervickaite-lai",
           artists: "Gabrielė Gervickaitė (Lithuania) + Yi Hsuan Lai (NYC)",
           pieces: [
@@ -163,6 +168,7 @@ export default class ExhibitionRoute extends Route {
         {
           token: 6,
           photos: 3,
+          photoScheme: "A6-#-Alex+Sydney",
           id: "mirutziu-shavers",
           artists: "Alex Mirutziu (Romania) + Sydney Shavers (NYC)",
           pieces: [
@@ -196,6 +202,7 @@ export default class ExhibitionRoute extends Route {
         {
           token: 7,
           photos: 4,
+          photoScheme: "A7-#-Terttu+Alex",
           id: "camilleri-uibopuu",
           artists: "Alex Camilleri (Malta) + Terttu Uibopuu (Estonia)",
           pieces: [
@@ -219,6 +226,7 @@ export default class ExhibitionRoute extends Route {
         {
           token: 8,
           photos: 3,
+          photoScheme: "A8-#-Kris+Barbara",
           id: "grey-neu",
           artists: "Barbara Maria Neu (Austria) + Kris Grey (NYC)",
           pieces: [
@@ -242,6 +250,7 @@ export default class ExhibitionRoute extends Route {
         {
           token: 9,
           photos: 5,
+          photoScheme: "A9-#-Eren+Sheila",
           id: "aksu-maldonado",
           artists: "Eren Aksu (Germany) + Sheila Maldonado (NYC)",
           pieces: [
@@ -266,6 +275,7 @@ export default class ExhibitionRoute extends Route {
         {
           token: 10,
           photos: 4,
+          photoScheme: "A10-#-Aaron+Kyle",
           id: "bezzina-hittmeier",
           artists: "Aaron Bezzina (Malta) + Kyle Hittmeier (NYC)",
           author: "Daina Mattis",
@@ -300,6 +310,7 @@ export default class ExhibitionRoute extends Route {
         {
           token: 11,
           photos: 3,
+          photoScheme: "A11-#-Sanne+LT",
           id: "lam-de-wilde",
           artists: "H. Lan Thao Lam (NYC) + Sanne De Wilde (Flanders, Belgium)",
           pieces: [
@@ -325,6 +336,8 @@ export default class ExhibitionRoute extends Route {
       undercurrent: [
         {
           token: 1,
+          photos: 3,
+          photoScheme: "U1-#-Sanne+LT",
           id: "de-wilde-lam",
           artists: "Sanne De Wilde (Flanders, Belgium) + H. Lan Thao Lam (NYC)",
           pieces: [
@@ -348,7 +361,8 @@ export default class ExhibitionRoute extends Route {
         },
         {
           token: 2,
-          photos: 5,
+          photos: 7,
+          photoScheme: "U2-#-Anna+Saddie",
           id: "bera-choua",
           artists: "Anna Bera (Poland) + Saddie Choua (Flanders, Belgium)",
           pieces: [
@@ -371,7 +385,8 @@ export default class ExhibitionRoute extends Route {
         },
         {
           token: 3,
-          photos: 2,
+          photos: 3,
+          photoScheme: "U3-#-Emily+Marie",
           id: "lukacova-shanahan",
           artists: "Marie Lukáčová (Czech Republic) + Emily Shanahan (NYC)",
           title: "Conversations between February and May",
@@ -409,6 +424,7 @@ export default class ExhibitionRoute extends Route {
         {
           token: 4,
           photos: 1,
+          photoScheme: "U4-Emmanuel+Justyna",
           id: "foql-massillon",
           title: "[Untitled]",
           artists: "Emmanuel Massillon (NYC) + Justyna Banaszczyk/FOQL (Poland)",

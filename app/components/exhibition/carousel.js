@@ -7,7 +7,8 @@ import { fadeIn, fadeOut } from 'ember-animated/motions/opacity';
 export default class ExhibitionCarouselComponent extends Component {
 
   src(count) {
-    return `assets/exhibition-photos/${this.args.id}-${count}.jpg`;
+    // const filename = this.args.photoScheme.replace("#", count);
+    return `assets/exhibition-photos/${this.args.photoScheme.replace("#", count)}.jpg`;
   }
 
   @tracked

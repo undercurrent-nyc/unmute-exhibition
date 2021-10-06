@@ -11,12 +11,12 @@
           ">
           {{#if (eq artwork.photos 1)}}
             <ResponsiveImage 
-              @src={{concat "assets/exhibition-photos/" artwork.id "-1.jpg"}}
+              @src={{concat "assets/exhibition-photos/" artwork.photoScheme ".jpg"}}
             />
           {{/if}}
 
           {{#if (gt artwork.photos 1)}}
-            <Exhibition::Carousel @id={{artwork.id}} @photoCount={{artwork.photos}} />
+            <Exhibition::Carousel @photoScheme={{artwork.photoScheme}} @photoCount={{artwork.photos}} />
           {{/if}}
 
           <p class="text-justify md:text-xl tracking-tight md:tracking-normal">{{html-safe artwork.blurb}}</p>
